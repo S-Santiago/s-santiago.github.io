@@ -1,5 +1,5 @@
 title: Santiago
 description: Pagina personal.
-show_downloads: true
-google_analytics:
+show_downloads: false
+google_analytics: 297292485
 theme: jekyll-theme-hacker

@@ -1,5 +1,6 @@
 if(typeof init === 'undefined'){
   const init = function(){
+    document.getElementById("menu_pie").children[0].innerHTML = "Sos un bobi";
     last = document.getElementById("logo_myagora").children[0].children[3].cloneNode(true);
     last.children[0].id="gestore";
     last.children[0].href="https://myagora.novaschool.es/myagora/home/";

@@ -1,1 +1,246 @@
-Hola Mundo
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Minerals and rocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://styles.redditmedia.com/t5_2ud0r/styles/communityIcon_1bbnfxbq8bf31.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 7%;
+        box-shadow: 3px 3px 10px 10px #888888;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      input[type=text] {
+        border: none;
+        border-radius: 7px;
+        background: #eee;
+        font-size: 16px;
+      }
+
+      input[type=button] {
+        border: none;
+        border-radius: 0;
+        background: #606060;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      input[type=button]:not(:disabled):hover {
+        border: none;
+        border-radius: 0;
+        background: #e6e6e6;
+        color: #606060;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      #slide1UserAnswer.correct {
+        background-color: #68ec5a;
+        cursor: default;
+      }
+
+      #slide1UserAnswer.incorrect {
+        background-color: #ec5a5a;
+        cursor: default;
+      }
+
+      #slide1Submit:disabled {
+        cursor: default;
+      }
+
+      #slide1TryAgain:disabled {
+        cursor: default;
+      }
+
+      #slide1TryAgain, #slide1Submit {
+      	margin-right: 10px;
+      }
+
+      footer {
+        position: fixed;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      div.left {
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+      }
+
+      div.right {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+      }
+
+      @keyframes rotation {
+		  from {
+		    transform: rotate(0deg) scale(1.0);
+		  }
+		  to {
+		    transform: rotate(359deg) scale(2.5);
+		  }
+	  }
+
+	.loading-screen {
+		width: 100%;
+		height: 100%;
+		cursor: none;
+	}
+
+	.loading-screen img {
+		position: fixed;
+		width: 250px;
+    	height: 250px;
+    	top: 30.5%;
+    	left: 41%;
+		animation: rotation 1.5s infinite linear;
+	}
+
+	.on-loaded {
+		width: 100%;
+		height: 100%;
+	}
+
+	.no-display {
+		display: none;
+	}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+	  	$( document ).ready(function() {
+		     setTimeout(function(){
+			    document.getElementById("loading-screen").remove();
+			    document.getElementById("on-loaded").classList.remove("no-display");
+			    document.getElementById("footer-left").classList.remove("no-display");
+			},800); 
+		});
+	  </script>
+  </head>
+  <body>
+  	<div class="loading-screen" id="loading-screen"><img src="https://styles.redditmedia.com/t5_2ud0r/styles/communityIcon_1bbnfxbq8bf31.png"></div>
+    <div class="on-loaded no-display" id="on-loaded">
+    	<br><center><h1>Minerals and rocks</h1></center>
+	    <!-- Swiper -->
+	    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+	      <div class="swiper-wrapper" id="swiper-wrapper-34109210525c4d5e24" aria-live="polite">
+	        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" style="width: 1920px;">Slide 1</div>
+	        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" style="width: 1920px;">
+	          <table>
+	            <tr>
+	              <th>
+	                <img src="data:image/jpeg;base64,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" style="width: 144px;height: 202px;object-fit: fill;display: initial;">
+	              </th>
+	            </tr>
+	            <tr><th></th></tr>
+	            <tr>
+	              <th>
+	                <br><input type="text" name="answer" id="slide1UserAnswer"><br><br>
+	                <input type="button" value="Check" id="slide1Submit"><input type="button" value="Try Again" id="slide1TryAgain" style="display: none;">
+	                <script type="text/javascript">
+	                  document.getElementById("slide1Submit").addEventListener("click", function () {
+	                    if (document.getElementById("slide1Submit").disabled == true) { return false; }
+	                    if (document.getElementById("slide1UserAnswer").value.toLowerCase() == "gold") {
+	                      document.getElementById("slide1UserAnswer").classList.add("correct");
+	                      document.getElementById("slide1UserAnswer").disabled = true;
+	                      document.getElementById("slide1Submit").disabled = true;
+	                    } else {
+	                      document.getElementById("slide1UserAnswer").classList.add("incorrect");
+	                      document.getElementById("slide1UserAnswer").disabled = true;
+	                      document.getElementById("slide1Submit").disabled = true;
+	                      document.getElementById("slide1TryAgain").style = "";
+	                    }
+	                  });
+	                  document.getElementById("slide1TryAgain").addEventListener("click", function () {
+	                  	  document.getElementById("slide1UserAnswer").classList.remove("incorrect");
+	                      document.getElementById("slide1UserAnswer").disabled = false;
+	                      document.getElementById("slide1Submit").disabled = false;
+	                      document.getElementById("slide1TryAgain").style = "display: none;";
+	                  });
+	                </script>
+	              </th>
+	            </tr>
+	          </table>
+	        </div>
+	        <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 1920px;">Slide 3</div>
+	        <div class="swiper-slide" role="group" aria-label="4 / 9" style="width: 1920px;">Slide 4</div>
+	        <div class="swiper-slide" role="group" aria-label="5 / 9" style="width: 1920px;">Slide 5</div>
+	        <div class="swiper-slide" role="group" aria-label="6 / 9" style="width: 1920px;">Slide 6</div>
+	        <div class="swiper-slide" role="group" aria-label="7 / 9" style="width: 1920px;">Slide 7</div>
+	        <div class="swiper-slide" role="group" aria-label="8 / 9" style="width: 1920px;">Slide 8</div>
+	        <div class="swiper-slide" role="group" aria-label="9 / 9" style="width: 1920px;">Slide 9</div>
+	      </div>
+	      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-34109210525c4d5e24" aria-disabled="false"></div>
+	      <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-34109210525c4d5e24" aria-disabled="true"></div>
+	    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+	    <!-- Swiper JS -->
+	    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	    <!-- Initialize Swiper -->
+	    <script>
+	      var swiper = new Swiper(".mySwiper", {
+	        navigation: {
+	          nextEl: ".swiper-button-next",
+	          prevEl: ".swiper-button-prev",
+	        },
+	      });
+	    </script>
+    </div>
+    <footer><div class="left no-display" id="footer-left">Project made by <b>Santiago Fernández Sánchez</b>, <b>Javier Sánchez Ayala</b>, <b>Liu Yanxiao</b></div><div class="right">Page made by <b>Santiago Fernández Sánchez</b> - <i>Copyright 2022</i></div></footer>
+  </body>
+</html>

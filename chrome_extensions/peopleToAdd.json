@@ -35,6 +35,13 @@
 		"id": 5044
 	}, 
 	{
+		"nombre": "José", 
+		"apellido1": "López", 
+		"apellido2": "Arrigo", 
+		"rango": "Alumno/a", 
+		"id": 10587
+	}, 
+	{
 		"nombre": "Mª Victoria", 
 		"apellido1": "García", 
 		"apellido2": "Domínguez", 

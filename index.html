@@ -50,14 +50,7 @@
 		if (new URLSearchParams(location.search).get('redirect')==1) {
 			location=ip;
 		}
-		document.getElementById("shortcut").onclick = "location='"+ip+"';";
-		var link = document.querySelector("link[rel~='icon']");
-		if (!link) {
-    			link = document.createElement('link');
-    			link.rel = 'icon';
-    			document.getElementsByTagName('head')[0].appendChild(link);
-		}
-		link.href = ip+'favicon.ico';
+		document.getElementById("shortcut").setAttribute("onclick", "location='"+ip+"';");
 	</script>
 	</div>
 </body>

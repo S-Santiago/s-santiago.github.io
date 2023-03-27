@@ -56,6 +56,13 @@
 		"id": 8039
 	}, 
 	{
+		"nombre": "Hugo", 
+		"apellido1": "Hylander", 
+		"apellido2": "Ruiz", 
+		"rango": "Alumno/a", 
+		"id": 5754
+	}, 
+	{
 		"nombre": "Mª Victoria", 
 		"apellido1": "García", 
 		"apellido2": "Domínguez", 
@@ -82,5 +89,12 @@
 		"apellido2": "Muñoz", 
 		"rango": "Director/a", 
 		"id": 838
+	}, 
+	{
+		"nombre": "Francisco José", 
+		"apellido1": "Barrionuevo", 
+		"apellido2": "Canto", 
+		"rango": "CEO", 
+		"id": 6201
 	}
 ]

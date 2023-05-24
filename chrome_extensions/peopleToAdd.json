@@ -103,5 +103,12 @@
 		"apellido2": "Canto", 
 		"rango": "CEO", 
 		"id": 6201
+	}, 
+	{
+		"nombre": "Sistemas Informática", 
+		"apellido1": "", 
+		"apellido2": "", 
+		"rango": "Administrador/a", 
+		"id": 5072
 	}
 ]
